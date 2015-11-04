@@ -10,7 +10,7 @@
 
     <preference name="orientation" value="default" /> 
 	<preference name="fullscreen" value="false" />
-	<preference name='phonegap-version' value='cli-5.1.1' />
+	<preference name='phonegap-version' value='cli-5.2.0' />
 	<gap:plugin name="cordova-plugin-battery-status" />
     <gap:plugin name="cordova-plugin-camera" />
     <gap:plugin name="cordova-plugin-media-capture" />
