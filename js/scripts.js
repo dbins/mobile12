@@ -1,3 +1,4 @@
+//http://www.javascriptlint.com/online_lint.php
 function updateMonthYear() {				
 	$month.html( cal.getMonthName() );
 	$year.html( cal.getYear() );
@@ -102,7 +103,7 @@ $('#container6').highcharts({
 		lazyLoad : true,
 		transitionStyle : "backSlide",
 		itemsMobile : true,
-		itemsDesktopSmall : true,
+		itemsDesktopSmall : true
 	});
 });
 
@@ -130,7 +131,9 @@ $(document).on('pageshow', '#grafico', function(){
 						dataLabels: {
 							enabled: true,
 							formatter: function() {
-								if (this.y > 5) return this.point.name;
+								if (this.y > 5) {
+								return this.point.name;
+								}
 							},
 							color: 'white',
 							style: {
@@ -184,7 +187,9 @@ $(document).on('pageshow', '#grafico', function(){
 						dataLabels: {
 							enabled: true,
 							formatter: function() {
-								if (this.y > 5) return this.point.name;
+								if (this.y > 5) {
+								return this.point.name;
+								}
 							},
 							color: 'white',
 							style: {
@@ -238,7 +243,9 @@ $(document).on('pageshow', '#grafico', function(){
 						dataLabels: {
 							enabled: true,
 							formatter: function() {
-								if (this.y > 5) return this.point.name;
+								if (this.y > 5) {
+								return this.point.name;
+								}
 							},
 							color: 'white',
 							style: {
@@ -279,7 +286,7 @@ $(document).on('pageshow', '#grafico', function(){
 		lazyLoad : true,
 		transitionStyle : "backSlide",
 		itemsMobile : true,
-		itemsDesktopSmall : true,
+		itemsDesktopSmall : true
 	});
 
 });
@@ -361,7 +368,7 @@ $(document).on('pageshow', '#banner2', function(){
 		lazyLoad : true,
 		transitionStyle : "backSlide",
 		itemsMobile : true,
-		itemsDesktopSmall : true,
+		itemsDesktopSmall : true
 	});
 });
 

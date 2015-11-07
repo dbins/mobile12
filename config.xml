@@ -29,7 +29,6 @@
     <gap:plugin name="cordova-plugin-network-information" />
     <gap:plugin name="cordova-plugin-splashscreen" />
     <gap:plugin name="cordova-plugin-vibration" />
-	
     <icon src="icon.png" />
 	<access origin="*" />
 </widget>
