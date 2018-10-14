@@ -489,6 +489,43 @@ $(document).on('pageshow', '#grafico2', function(){
 	});
 });
 
+$(document).on('pageshow', '#grafico3', function(){
+ $('#container12').highcharts({
+              chart: {
+                  type: 'line'
+              },
+              title: {
+                  text: 'Trocas por mes'
+              },
+              subtitle: {
+                  text: 'Clientes Premium e Basic'
+              },
+              xAxis: {
+                  categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+              },
+              yAxis: {
+                  title: {
+                      text: 'Quantidade'
+                  }
+              },
+              plotOptions: {
+                  line: {
+                      dataLabels: {
+                          enabled: true
+                      },
+                      enableMouseTracking: false
+                  }
+              },
+              series: [{
+                  name: 'Premium',
+                  data: [100, 69, 95, 145, 184, 215, 252, 265, 233, 183, 139, 96]
+              }, {
+                  name: 'Basic',
+                  data: [390, 420, 570, 850, 1190, 1520, 1700, 1660, 1420, 1030, 660, 480]
+              }]
+          });
+});
+
 $(document).on('pageshow', '#menu_responsivo', function(){
 	$('#dl-menu' ).dlmenu();
 });

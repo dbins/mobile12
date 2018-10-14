@@ -57,20 +57,20 @@
 			height: auto;
 		}
 		
-		.infostatus{ width:35%; padding:5px; text-align:center; float:left; font-size:13px; min-height:100px;border-style: solid; border-width:2px;padding:15px; margin: 15px;}
+		.infostatus{ width:25%; padding:5px; text-align:center; float:left; font-size:13px; min-height:100px;border-style: solid; border-width:2px;padding:15px; margin: 15px;}
 		.infostatus i{font-size:45px;  color:#FF0000; float:left; width:100%}
 		
 		/* Add alternating row stripes */
 		
-.table-stripe tbody tr:nth-child(odd) td,
-.table-stripe tbody tr:nth-child(odd) th {
-  background-color: rgba(0,0,0,0.04);
-}
-/* Add stroke to the header and last item */
-.table-stripe thead th,
-.table-stripe tbody tr:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
+		.table-stripe tbody tr:nth-child(odd) td,
+		.table-stripe tbody tr:nth-child(odd) th {
+		  background-color: #ffffe0;
+		}
+		/* Add stroke to the header and last item */
+		.table-stripe thead th,
+		.table-stripe tbody tr:last-child {
+		  border-bottom: 1px solid rgba(0, 0, 0, .1);
+		}
 	</style>
 </head>
 <body>
@@ -90,6 +90,7 @@
 			<li><a href="#banner"><img src="img/smico5.png">Pontos Acumulados</a></li>
 			<li><a href="#banner2"><img src="img/smico5.png">Trocas</a></li>
 			<li><a href="#grafico2"><img src="img/smico5.png">Exemplo Drilldown</a></li>
+			<li><a href="#grafico3"><img src="img/smico5.png">Trocas Mensais</a></li>
 		</ul>
 	</div>
 
@@ -205,35 +206,35 @@
 			</div>
 			
 			<center>
-			<table data-role="table" data-mode="reflow" class="ui-responsive ui-shadow table-stripe" >
+			<table data-role="table" data-mode="reflow" class="ui-responsive" >
 				<thead>
 				<tr>
-					<th>Tipo</th>
-					<th>Contratado</th>
-					<th>Nao Contratado</th>
-					<th>Bloqueado</th>
+					<th data-priority="1">Tipo</th>
+					<th data-priority="2">Contratado</th>
+					<th data-priority="3">Nao Contratado</th>
+					<th data-priority="4">Bloqueado</th>
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td>Saudavel</td>
-					<td>376.000</td>
-					<td>529.000</td>
-					<td>208.000</td>
-				</tr>
-				
-				<tr>
-					<td>Nao Saudavel</td>
-					<td>32.000</td>
-					<td>176.000</td>
-					<td>305.000</td>
-				</tr>
-				<tr>
-					<td>Cancelado</td>
-					<td>9.000</td>
-					<td>15.000</td>
-					<td>18.000</td>
-				</tr>
+					<tr>
+						<td>Saudavel</td>
+						<td>376.000</td>
+						<td>529.000</td>
+						<td>208.000</td>
+					</tr>
+					
+					<tr>
+						<td>Nao Saudavel</td>
+						<td>32.000</td>
+						<td>176.000</td>
+						<td>305.000</td>
+					</tr>
+					<tr>
+						<td>Cancelado</td>
+						<td>9.000</td>
+						<td>15.000</td>
+						<td>18.000</td>
+					</tr>
 				</tbody>
 			</table>
 			</center>
@@ -308,6 +309,17 @@
 		</div>
 	</div>	
 	
+	<div data-role="page" id="grafico3" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
+			<a href="#" data-slidemenu="#slidemenu" data-slideopen="false" data-icon="smico" data-corners="false" data-iconpos="notext">Menu</a>
+			<h1>Trocas por Mês</h1>
+		</div>
+
+		<div data-role="main" id="main_grafico3" class="ui-content">
+			<div id="container12" style="width:100%; height:400px;"></div>
+		</div>
+	</div>	
 	
 	<script type="text/javascript" src="phonegap.js"></script>
 </body>
